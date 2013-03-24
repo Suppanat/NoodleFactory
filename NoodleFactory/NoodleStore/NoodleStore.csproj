@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{383A9AF9-09D3-4386-9240-79B2DF6C2F21}</ProjectGuid>
+    <ProjectGuid>{E3C5455E-A4AF-453B-8915-25B75F8672E9}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WindowsFormsApplication1</RootNamespace>
-    <AssemblyName>WindowsFormsApplication1</AssemblyName>
+    <RootNamespace>NoodleStore</RootNamespace>
+    <AssemblyName>NoodleStore</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
@@ -46,19 +46,43 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Server.cs" />
-    <Compile Include="Client.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="MyNetWorker.cs" />
+    <Compile Include="FormSearchCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSearchCustomer.Designer.cs">
+      <DependentUpon>FormSearchCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUpdateCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUpdateCustomer.Designer.cs">
+      <DependentUpon>FormUpdateCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUpdateProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUpdateProduct.Designer.cs">
+      <DependentUpon>FormUpdateProduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSearchCustomer.resx">
+      <DependentUpon>FormSearchCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUpdateCustomer.resx">
+      <DependentUpon>FormUpdateCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUpdateProduct.resx">
+      <DependentUpon>FormUpdateProduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -78,12 +102,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\Downloads\lidgren-network-gen3-2012-10-01\Lidgren-network-gen3\Lidgren.Network\Lidgren.Network.csproj">
-      <Project>{49BA1C69-6104-41AC-A5D8-B54FA9F696E8}</Project>
-      <Name>Lidgren.Network</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
