@@ -228,9 +228,9 @@
             this.labelCustomerCode.AutoSize = true;
             this.labelCustomerCode.Location = new System.Drawing.Point(20, 33);
             this.labelCustomerCode.Name = "labelCustomerCode";
-            this.labelCustomerCode.Size = new System.Drawing.Size(57, 13);
+            this.labelCustomerCode.Size = new System.Drawing.Size(38, 13);
             this.labelCustomerCode.TabIndex = 6;
-            this.labelCustomerCode.Text = "รหัสลูกค้า :";
+            this.labelCustomerCode.Text = "ลูกค้า :";
             // 
             // labelLine
             // 
